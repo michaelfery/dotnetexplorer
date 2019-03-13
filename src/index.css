@@ -125,7 +125,7 @@ h3 {
     margin-bottom: 1rem;
   }
   .home .content .options-select {
-    color: var(options-select-color);
+    color: var(--options-select-color);
     font-size: 1.8rem;
     letter-spacing: 1px;
     margin: 0;
@@ -148,7 +148,10 @@ h3 {
       top: 90%; }
     .home .content .options-select__menu-list {
       padding: 0 !important; }
-
+    .home .content .options-select__option--is-focused {
+      background-color: #e1d2e4; }
+    .home .content .options-select__option--is-selected {
+      background-color: var(--light-purple-color); }
 
   /* Boards */
   .home .boards .board_title {
