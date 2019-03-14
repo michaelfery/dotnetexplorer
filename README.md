@@ -1,5 +1,15 @@
 # .Net Core Command Explorer
 
+#### Table of Contents
+
+[Intro](https://github.com/michaelfery/dotnetexplorer/blob/master/README.md#intro)
+
+[Tools](https://github.com/michaelfery/dotnetexplorer/blob/master/README.md#tools)
+
+[Available Scripts](https://github.com/michaelfery/dotnetexplorer/blob/master/README.md#available-scripts)
+
+[Contribute](https://github.com/michaelfery/dotnetexplorer/blob/master/README.md#contribute)
+
 ## Intro
 
 Recently, I came across [Summitech's Git explorer](https://github.com/summitech/gitexplorer). It is a really cool resource for anyone to easily figure out the best Git commands to use. I loved it, use it almost every day and decided to build something similar for .Net Core CLI.
