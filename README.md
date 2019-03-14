@@ -1,4 +1,4 @@
-# .Net Core Command Explorer
+# .Net Core CLI Explorer
 
 #### Table of Contents
 

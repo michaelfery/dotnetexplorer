@@ -1,6 +1,6 @@
 {
-  "short_name": ".Net Core Explorer",
-  "name": ".Net Core Explorer",
+  "short_name": ".Net Core CLI Explorer",
+  "name": ".Net Core CLI Explorer",
   "icons": [
     {
       "src": "favicon.ico",

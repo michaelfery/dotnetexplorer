@@ -100,7 +100,7 @@ class App extends Component {
             <div>
               <div>
                 <h2 className="title  dark-white">
-                  <span>.Net Core</span> Command Explorer
+                  <span>.Net Core</span> CLI Explorer
                 </h2>
                 <p className="subtitle dark-grey">
                   Find the right commands from the <span>.NET Core command-line interface (CLI)</span> without digging through the web.
