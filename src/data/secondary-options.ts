@@ -32,19 +32,19 @@ const options: { [key: string]: Choice[] } = {
       value: 'csharp-project',
       label: 'an existing C# project to a solution',
       usage: 'dotnet sln <solution>.sln add <project>.c­sproj',
-      nb: 'Replace "solution" and "project" with the items you want'
+      nb: 'Replace <solution> and <project> with the items you want'
     },
     {
       value: 'pattern',
       label: 'multiple C# projects to a solution using a globbing pattern',
       usage: 'dotnet sln <solution>.sln add **/*.cs­proj',
-      nb: 'Replace "solution" with the items you want'
+      nb: 'Replace <solution> with the name you want'
     },
     {
-      value: 'pattern',
+      value: 'reference',
       label: 'a reference from one project to another',
       usage: 'dotnet add reference <project>.csproj',
-      nb: 'Replace "project" with the item you want'
+      nb: 'Replace <project> with the item you want'
     }    
   ],
   delete: [
@@ -56,7 +56,13 @@ const options: { [key: string]: Choice[] } = {
   ],
   show: [
     {
-      value: 'templates',
+      value: 'help',
+      label: 'help for a command',
+      usage: 'dotnet help <command>',
+      nb: 'Replace <command> with the command you need help for.\n\ne.g. dotnet build -h.'
+    },
+    {
+      value: 'installed templates',
       label: 'list of the available templates',
       usage: 'dotnet new -l'
     },
@@ -71,12 +77,12 @@ const options: { [key: string]: Choice[] } = {
       usage: 'dotnet --info'
     },
     {
-      value: 'runtimes',
+      value: 'installed runtimes',
       label: 'installed .NET Core runtimes',
       usage: 'dotnet --list-runtimes'
     },
     {
-      value: 'sdks',
+      value: 'installed sdks',
       label: 'installed .NET Core SDKs',
       usage: 'dotnet --list-sdks'
     },
@@ -100,6 +106,14 @@ const options: { [key: string]: Choice[] } = {
       label: 'the output of a project',
       usage: 'dotnet clean [<project>]',
       nb: 'Replace <project> with your project name.\n\nThe dotnet clean command cleans the output of the previous build.'
+    }
+  ],
+  run: [
+    {
+      value: 'sourcecode',
+      label: 'source code',
+      usage: 'dotnet run <myapp.dll>',
+      nb: 'Replace <myapp.dll> with your dll.\n\nThe command depends on the dotnet build command to build the code. Any requirements for the build, such as that the project must be restored first, apply to dotnet run as well.'
     }
   ]
 };
