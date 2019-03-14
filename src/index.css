@@ -107,11 +107,11 @@ h3 {
 
 .home .subtitle {
   color: var(--main-subtitle-color);
-  font-size: .8em;
+  font-size: .7em;
   letter-spacing: 1px;
   margin: 0;
   /* transition: color .1s; */
-  /* width: 30rem; */
+  max-width: 80rem;
 }
 
 .home .content .options {
