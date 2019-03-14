@@ -1,15 +1,15 @@
 import { Choice } from './Choice';
 
 export const options: { [key: string]: Choice[] } = {
-  new: [
+  project: [
     {
       value: 'console',
-      label: 'console application',
+      label: 'Console application',
       usage: 'dotnet new console'
     },
     {
       value: 'classlib',
-      label: 'class library',
+      label: 'Class library',
       usage: 'dotnet new classlib'
     },
     {

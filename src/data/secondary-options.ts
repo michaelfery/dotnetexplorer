@@ -8,8 +8,23 @@ const options: { [key: string]: Choice[] } = {
       usage: 'dotnet new sln'
     },
     {
-      value: 'new',
+      value: 'project',
       label: 'new project'
+    },
+    {
+      value: 'globaljson',
+      label: 'global.json file',
+      usage: 'dotnet new globaljson'
+    },
+    {
+      value: 'nugetconfig',
+      label: 'NuGet config',
+      usage: 'dotnet new nugetconfig'
+    },
+    {
+      value: 'webconfig',
+      label: 'Web config',
+      usage: 'dotnet new webconfig'
     }
   ],
   add: [
@@ -70,6 +85,22 @@ const options: { [key: string]: Choice[] } = {
       label: 'version of the .NET Core SDK in use',
       usage: 'dotnet --version'
     }    
+  ],
+  restore: [
+    {
+      value: 'dependencies',
+      label: 'dependencies and tools of a project',
+      usage: 'dotnet restore',
+      nb: 'Starting with .NET Core 2.0 SDK, you don\'t have to run dotnet restore because it\'s run implicitly by all commands that require a restore to occur, such as dotnet new, dotnet build and dotnet run.'
+    }
+  ],
+  clean: [
+    {
+      value: 'output',
+      label: 'the output of a project',
+      usage: 'dotnet clean [<project>]',
+      nb: 'Replace <project> with your project name.\n\nThe dotnet clean command cleans the output of the previous build.'
+    }
   ]
 };
 

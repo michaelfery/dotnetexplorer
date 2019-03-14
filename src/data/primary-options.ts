@@ -5,6 +5,8 @@ const options: Choice[] = [
   { value: 'create', label: 'create' },
   { value: 'delete', label: 'delete/remove' },
   { value: 'show', label: 'show/view' },
+  { value: 'restore', label: 'restore' },
+  { value: 'clean', label: 'clean' }
 ];
 
 export const primaryOptions = options.sort((x, y) => {
