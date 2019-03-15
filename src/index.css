@@ -57,8 +57,8 @@ body {
 }
 
 .home .content {
-  /* flex: 1 1; */
-  /* padding-top: 10rem; */
+  flex: 1 1;
+  padding-top: 10rem;
 }
 h1,
 h2,
@@ -96,10 +96,6 @@ h3 {
   display: none;
  }
 
-.home .content {
-  max-width: 80rem;
-}
-
 .home .title {
   color: var(--main-title-color);
   letter-spacing: 1px;
@@ -115,6 +111,7 @@ h3 {
   letter-spacing: 1px;
   margin: 0;
   /* transition: color .1s; */
+  max-width: 80rem;
 }
 
 .home .content .options {

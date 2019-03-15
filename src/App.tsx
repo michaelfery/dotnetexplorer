@@ -6,6 +6,7 @@ import { secondaryOptions } from './data/secondary-options';
 import { tertiaryOptions } from './data/tertiary-options';
 import { State } from './State';
 import { Choice } from './data/Choice';
+import { Footer } from './components/Footer';
 
 class App extends Component {
   state: State;
@@ -174,6 +175,7 @@ class App extends Component {
               </div>
             </div>
           </div>
+          <Footer/>
         </header>
       </div>
     );
