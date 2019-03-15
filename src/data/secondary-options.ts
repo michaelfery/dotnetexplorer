@@ -35,23 +35,41 @@ const options: { [key: string]: Choice[] } = {
       nb: 'Replace <solution> and <project> with the items you want'
     },
     {
+      value: 'project-reference',
+      label: 'a reference from one project to another',
+      usage: 'dotnet add reference <project>.csproj',
+      nb: 'Replace <project> with the item you want'
+    },
+    {
+      value: 'package-reference',
+      label: 'a package reference to a project file',
+      usage: 'dotnet add [<project>] package <package_name>',
+      nb: 'If not specified, the command searches the current directory for one\n\ne.g. "dotnet add package Newtonsoft.Json"\n\nAfter running the command, there\'s a compatibility check to ensure the package is compatible with the frameworks in the project. If the check passes, a <PackageReference> element is added to the project file and dotnet restore is run.'
+    },
+    {
       value: 'pattern',
       label: 'multiple C# projects to a solution using a globbing pattern',
       usage: 'dotnet sln <solution>.sln add **/*.cs­proj',
       nb: 'Replace <solution> with the name you want'
-    },
-    {
-      value: 'reference',
-      label: 'a reference from one project to another',
-      usage: 'dotnet add reference <project>.csproj',
-      nb: 'Replace <project> with the item you want'
-    }    
+    }
   ],
   delete: [
     {
       value: 'project',
       label: 'a C# project from a solution',
       usage: 'dotnet sln todo.sln remove todo-a­pp/­tod­o-a­pp.c­sproj'
+    },
+    {
+      value: 'project-reference',
+      label: 'project-to-project references',
+      usage: 'dotnet remove [<PROJECT>] reference [-f|--framework] <PROJECT_REFERENCES>',
+      nb: 'If not specified, the command searches the current directory for one\n\ne.g. "dotnet remove reference lib1/lib1.csproj lib2/lib2.csproj"'
+    },
+    {
+      value: 'package-reference',
+      label: 'package reference from a project file',
+      usage: 'dotnet remove [<PROJECT>] package <PACKAGE_NAME>',
+      nb: 'If not specified, the command searches the current directory for one\n\ne.g. dotnet remove package Newtonsoft.Json'
     }
   ],
   show: [
