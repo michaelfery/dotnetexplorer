@@ -63,13 +63,13 @@ const options: { [key: string]: Choice[] } = {
       value: 'project-reference',
       label: 'project-to-project references',
       usage: 'dotnet remove [<PROJECT>] reference [-f|--framework] <PROJECT_REFERENCES>',
-      nb: 'If not specified, the command searches the current directory for one\n\ne.g. "dotnet remove reference lib1/lib1.csproj lib2/lib2.csproj"'
+      nb: 'If not specified, the command searches the current directory for project\n\ne.g. "dotnet remove reference lib1/lib1.csproj lib2/lib2.csproj"'
     },
     {
       value: 'package-reference',
       label: 'package reference from a project file',
       usage: 'dotnet remove [<PROJECT>] package <PACKAGE_NAME>',
-      nb: 'If not specified, the command searches the current directory for one\n\ne.g. dotnet remove package Newtonsoft.Json'
+      nb: 'If not specified, the command searches the current directory for project\n\ne.g. dotnet remove package Newtonsoft.Json'
     }
   ],
   show: [
@@ -132,6 +132,14 @@ const options: { [key: string]: Choice[] } = {
       label: 'source code',
       usage: 'dotnet run <myapp.dll>',
       nb: 'Replace <myapp.dll> with your dll.\n\nThe command depends on the dotnet build command to build the code. Any requirements for the build, such as that the project must be restored first, apply to dotnet run as well.'
+    }
+  ],
+  publish: [
+    {
+      value: 'app',
+      label: 'the application and its dependencies',
+      usage: 'dotnet publish [<project>] [-c|--configuration] [-f|--framework]',
+      nb: 'dotnet publish compiles the application, reads through its dependencies specified in the project file, and publishes the resulting set of files to a directory.\n\n If not specified, the command searches the current directory for project\n\n e.g. "dotnet publish --framework netcoreapp1.1 --runtime osx.10.11-x64"'
     }
   ]
 };
