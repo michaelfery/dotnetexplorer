@@ -139,7 +139,7 @@ h3 {
     .home .content .options-select__control {
       height: 3rem;
       border: none;
-      box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1); } */
+      box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1); }
     .home .content .options-select__single-value {
       transition: 0.1s color; }
     .home .content .options-select__menu {
